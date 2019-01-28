@@ -8,8 +8,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Train Information</title>
-    <meta name="description" content="Train Scheduler app" />
+    <title>Train Schedule</title>
+    <meta name="description" content="Train Schedule app" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -35,43 +35,86 @@
     <br />
     <div class="container-fluid">
       <div class="jumbotron text-center bg-info text-light">
-        <h1 class="display-4">Train Scheduler</h1>
+        <h1 class="display-4">Train Schedule</h1>
         <hr class="my-4" />
         <p class="lead">
-          Current train schedule. All trains are currently running on time. Use
-          the form at the bottom to add a new train to the scheduler.
+          All trains are currently running on time. Use the form at the bottom
+          to add a new train to the schedule.
         </p>
       </div>
       <span class="table-caption">Current Train Schedule</span>
+      <div class="schedule-table">
       <table class="table table-hover">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row">Acela Express</th>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <th scope="row">California Zephyr</th>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <th scope="row">Empire Builder</th>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
+          </tr>
+          <tr>
+            <th scope="row">Capitol Corridor</th>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
+          </tr>
+          <tr>
+            <th scope="row">Coast Starlight</th>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
+            <td>###</td>
           </tr>
         </tbody>
       </table>
+      </div>
+      <br>
+      <span class="form-caption">Add Train</span>
+      <div class="train-form">
+      <br>
+      <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+    </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script src="assets/javascript/script.js" async defer></script>

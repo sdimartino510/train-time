@@ -4,7 +4,11 @@ body {
 thead {
     font-weight: 700;
 }
-.table-caption {
+.schedule-table, .train-form {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.table-caption, .form-caption {
     font-weight: 700;
     font-size: 25px;
 }
