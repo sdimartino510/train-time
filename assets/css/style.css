@@ -1,0 +1,10 @@
+body {
+    background-image: url(../images/gravel.png);
+}
+thead {
+    font-weight: 700;
+}
+.table-caption {
+    font-weight: 700;
+    font-size: 25px;
+}
