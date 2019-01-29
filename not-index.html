@@ -45,20 +45,54 @@
       </div>
       <span class="table-caption">Current Train Schedule</span>
       <div class="schedule-table">
-          <table class="table table-hover" id="train-table">
-              <thead class="thead-dark">
-                  <tr>
-                      <th>Train Name</th>
-                      <th>Destination</th>
-                      <th>Frequency (min)</th>
-                      <th>Next Arrival</th>
-                      <th>Mins Away</th>
-                  </tr>
-              </thead>
-              <tbody class="train-info">
-                  <!-- Insert train rows here -->
-              </tbody>
-          </table>
+        <table class="table table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency (min)</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Acela Express</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">California Zephyr</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">Empire Builder</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">Capitol Corridor</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">Coast Starlight</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <br />
       <span class="form-caption">Add Train</span>
@@ -82,7 +116,7 @@
             <label for="inputFrequency">Frequency (min):</label>
             <input type="text" class="form-control" id="inputFrequency" />
           </div>
-          <button id="submit" type="submit" class="btn btn-dark">Submit</button>
+          <button type="submit" class="btn btn-dark">Submit</button>
         </form>
       </div>
       <br />
