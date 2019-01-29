@@ -34,9 +34,9 @@
     <![endif]-->
     <br />
     <div class="container-fluid">
-      <div class="jumbotron text-center bg-info text-light">
+      <div class="jumbotron text-center bg-dark text-light">
         <h1 class="display-4">Train Schedule</h1>
-        <hr class="my-4" />
+        <hr class="my-3" />
         <p class="lead">
           All trains are currently running on time. Use the form at the bottom
           to add a new train to the schedule.
@@ -44,77 +44,81 @@
       </div>
       <span class="table-caption">Current Train Schedule</span>
       <div class="schedule-table">
-      <table class="table table-hover">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Train Name</th>
-            <th scope="col">Destination</th>
-            <th scope="col">Frequency (min)</th>
-            <th scope="col">Next Arrival</th>
-            <th scope="col">Minutes Away</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Acela Express</th>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-          </tr>
-          <tr>
-            <th scope="row">California Zephyr</th>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-          </tr>
-          <tr>
-            <th scope="row">Empire Builder</th>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-          </tr>
-          <tr>
-            <th scope="row">Capitol Corridor</th>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-          </tr>
-          <tr>
-            <th scope="row">Coast Starlight</th>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-            <td>###</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="table table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency (min)</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Acela Express</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">California Zephyr</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">Empire Builder</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">Capitol Corridor</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+            <tr>
+              <th scope="row">Coast Starlight</th>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+              <td>###</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <br>
+      <br />
       <span class="form-caption">Add Train</span>
       <div class="train-form">
-      <br>
-      <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+        <form>
+          <div class="form-group">
+            <label for="inputTrainName">Train Name:</label>
+            <input type="text" class="form-control" id="inputTrainName" />
+          </div>
+          <div class="form-group">
+            <label for="inputDestination">Destination:</label>
+            <input type="text" class="form-control" id="inputDestination" />
+          </div>
+          <div class="form-group">
+            <label for="inputTrainTime"
+              >First Train Time (HH:mm - military time):</label
+            >
+            <input type="text" class="form-control" id="inputTrainTime" />
+          </div>
+          <div class="form-group">
+            <label for="inputFrequency">Frequency (min):</label>
+            <input type="text" class="form-control" id="inputFrequency" />
+          </div>
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
       </div>
-    </div>
+      <br />
     </div>
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script src="assets/javascript/script.js" async defer></script>
