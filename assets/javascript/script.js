@@ -11,7 +11,8 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-$("#submit").on("click", function() {
+$("#submit").on("click", function(event) {
+  event.preventDefault();
   // Get values from form inputs
   var name = $("#inputTrainName")
     .val()
@@ -54,8 +55,6 @@ $("#submit").on("click", function() {
   $("#inputDestination").val("");
   $("#inputTrainTime").val("");
   $("#inputFrequency").val("");
-
-  return false;
 });
 
 database.ref().on("child_added", function(childSnapshot, prevChildkey) {
