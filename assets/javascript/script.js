@@ -30,12 +30,6 @@ $("#submit").on("click", function(event) {
     .val()
     .trim();
 
-  // Test for variables entered
-  console.log(name);
-  console.log(destination);
-  console.log(trainTime);
-  console.log(frequency);
-
   // Creates local "temporary" object for holding train data
   var newTrain = {
     name: name,
@@ -48,8 +42,7 @@ $("#submit").on("click", function(event) {
   database.ref().push(newTrain);
 
   // Alert
-  alert("New train successfully added");
-  console.log(alert);
+  swal("Success!", "New train added to schedule!", "success");
 
   $("#inputTrainName").val("");
   $("#inputDestination").val("");
@@ -58,7 +51,6 @@ $("#submit").on("click", function(event) {
 });
 
 database.ref().on("child_added", function(childSnapshot, prevChildkey) {
-  console.log(childSnapshot.val());
 
   // Stores everything into a variable.
   var train = childSnapshot.val().name;
@@ -67,7 +59,6 @@ database.ref().on("child_added", function(childSnapshot, prevChildkey) {
   var frequency = childSnapshot.val().frequency;
 
   var currentTime = moment();
-  console.log("CURRENT TIME: " + moment(currentTime).format("HH:mm"));
 
   var diffTime = moment().diff(moment.unix(trainTime), "minutes");
   var timeRemainder = diffTime % frequency;
@@ -75,11 +66,6 @@ database.ref().on("child_added", function(childSnapshot, prevChildkey) {
   var nextTrainArrival = moment()
     .add(minutes, "m")
     .format("HH:mm");
-
-  console.log(minutes);
-  console.log(nextTrainArrival);
-  console.log(moment().format("HH:mm"));
-  console.log(nextTrainArrival);
 
   // Appends train info to table
   $("#train-table > tbody").append(
