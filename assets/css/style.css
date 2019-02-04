@@ -1,5 +1,11 @@
 body {
-    background-image: url(../images/gravel.png);
+    background-image: url(../images/train.jpg);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    font-family: 'Faster One', cursive;
+    font-size: 80px !important;
 }
 thead {
     font-weight: 700;
@@ -14,6 +20,7 @@ thead {
     padding: 15px;
 }
 .table-caption, .form-caption {
+    color: #ffffff;
     font-weight: 700;
     font-size: 25px;
 }
