@@ -20,4 +20,4 @@ _train-time_ is an exercise in data permanence. It is a schedule tracking app fo
 Thanks again to my instructor, Mark Carlson, my class TA's, and my tutor Lindsey Bowen, who all work to make this sorcery understandable.
 
 ### Credits
-This app has been designed and coded by [Sergio Di Martino](https://github.com/sdimartino510/) as a homework assignment for UC Berkeley Coding Bootcamp, Full Stack Flex program. Any questions, comments, or suggestions about this app can be directed to [Sergio](mailto:sdimartino@gmail.com).
+This app has been designed and coded by [Sergio Di Martino](https://webdevserg.io/) as a homework assignment for UC Berkeley Coding Bootcamp, Full Stack Flex program. Any questions, comments, or suggestions about this app can be directed to [Sergio](mailto:sergio@webdevserg.io).
